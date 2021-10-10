@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:id="@+id/toolbar"
+        android:layout_marginTop="30dp"
+        android:layout_height="?attr/actionBarSize">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good morning Akila!"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="14dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+
+        <ImageView
+            android:layout_marginLeft="170dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/path"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/deliver_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/metropolis_semibold"
+                    android:text="Delivering to"
+                    android:layout_marginLeft="21dp"
+                    android:textColor="#4A4B4D"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="186dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deliver_text"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="204dp"
+                    android:layout_marginRight="204dp"
+                    android:drawableRight="@drawable/gr"
+                    android:text="Current Location"
+                    android:textColor="#7C7D7E"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <!-- <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:layout_below="@id/app_name"
+                     android:layout_marginLeft="40dp"
+                     android:layout_marginTop="20dp"
+                     android:layout_marginRight="40dp"
+                     android:layout_marginBottom="20dp"
+                     android:background="@color/white"
+                     android:elevation="8dp">
+
+
+
+
+
+
+
+
+                 </RelativeLayout>-->
+
+
+            </RelativeLayout>
+
+            <EditText
+                android:background="@drawable/rect1"
+                android:layout_width="match_parent"
+                android:layout_marginStart="21dp"
+                android:layout_marginEnd="21dp"
+                android:drawableLeft="@drawable/ic_search"
+                android:paddingLeft="20dp"
+                android:hint="Search food"
+                android:layout_marginTop="34dp"
+                android:textColorHint="#B6B7B7"
+                android:fontFamily="@font/metropolis_semibold"
+                android:drawableTint="@color/black"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+            <HorizontalScrollView
+                android:layout_marginTop="30dp"
+                android:scrollbars="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/teal_700"
+                            android:elevation="8dp">
+
+                            <ImageView
+                                android:id="@+id/beautytips"
+                                android:layout_width="88dp"
+                                android:layout_height="88dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/one" />
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Offers"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/metropolis_semibold"
+                            android:textColor="@color/black"
+                            android:textAlignment="center" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:layout_margin="10dp"
+                            android:elevation="8dp">
+
+                            <ImageView
+                                android:layout_width="88dp"
+                                android:layout_height="88dp"
+                                android:src="@drawable/two"
+                                android:layout_centerInParent="true" />
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Sri Lankan"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/metropolis_semibold"
+                            android:textColor="@color/black"
+                            android:textAlignment="center" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:layout_margin="10dp"
+                            android:elevation="8dp">
+
+                            <ImageView
+                                android:layout_width="88dp"
+                                android:layout_height="88dp"
+                                android:src="@drawable/three"
+                                android:layout_centerInParent="true" />
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Italian"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/metropolis_semibold"
+                            android:textColor="@color/black"
+                            android:textAlignment="center" />
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:layout_margin="10dp"
+                            android:elevation="8dp">
+
+                            <ImageView
+                                android:layout_width="88dp"
+                                android:layout_height="88dp"
+                                android:src="@drawable/four"
+                                android:layout_centerInParent="true" />
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Cosmetics"
+                            android:textColor="@color/black"
+                            android:textAlignment="center" />
+
+
+                    </LinearLayout>
+                    <!-- <LinearLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:orientation="vertical">
+
+                         <RelativeLayout
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_margin="10dp"
+                             android:elevation="8dp">
+
+                             <ImageView
+                                 android:id="@+id/catalogs"
+                                 android:layout_width="30dp"
+                                 android:layout_height="30dp"
+                                 android:layout_centerInParent="true"/>
+
+
+                         </RelativeLayout>
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:gravity="center_horizontal"
+                             android:text="Catalogs"
+                             android:textColor="@color/black"
+                             android:textAlignment="center" />
+
+
+                     </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:orientation="vertical">
+
+                         <RelativeLayout
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_margin="10dp"
+                             android:elevation="8dp">
+
+                             <ImageView
+                                 android:id="@+id/makeuptuto"
+                                 android:layout_width="30dp"
+                                 android:layout_height="30dp"
+                                 android:layout_centerInParent="true" />
+
+
+                         </RelativeLayout>
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:gravity="center_horizontal"
+                             android:text="Tutorial"
+                             android:textColor="@color/black"
+                             android:textAlignment="center" />
+
+
+                     </LinearLayout>
+ -->
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:id="@+id/relative_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Popular Restaurents"
+                        android:textColor="#4A4B4D"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="21dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:text="View all"
+                        android:textSize="13sp"
+                        android:textColor="#FC6011"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/featured_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#8FDDD5D5" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Most Popular"
+                    android:textColor="#4A4B4D"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="21dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="171dp"
+                    android:text="View all"
+                    android:textSize="13sp"
+                    android:textColor="#FC6011"/>
+            </LinearLayout>
+
+
+            <HorizontalScrollView
+                android:layout_marginTop="30dp"
+                android:scrollbars="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="228dp"
+                            android:layout_height="135dp"
+                            android:layout_margin="10dp"
+                            android:elevation="8dp">
+
+                            <ImageView
+                                android:layout_width="228dp"
+                                android:layout_height="135dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/food_1" />
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Café De Bambaa"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/metropolis_semibold"
+                            android:textColor="#4A4B4D"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Café     Western Food"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/metropolis_semibold"
+                            android:textColor="#4A4B4D"
+                            android:textAlignment="center" />
+
+
+
+                    </LinearLayout>
+
+                    <!--<LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:layout_margin="10dp"
+                            android:elevation="8dp">
+
+                            <ImageView
+                                android:id="@+id/parlor"
+                                android:layout_width="88dp"
+                                android:layout_height="88dp"
+                                android:src="@drawable/two"
+                                android:layout_centerInParent="true" />
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Sri Lankan"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/metropolis_semibold"
+                            android:textColor="@color/black"
+                            android:textAlignment="center" />
+
+
+                    </LinearLayout>-->
+
+                    <!--<LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:layout_margin="10dp"
+                            android:elevation="8dp">
+
+                            <ImageView
+                                android:id="@+id/makeup"
+                                android:layout_width="88dp"
+                                android:layout_height="88dp"
+                                android:src="@drawable/three"
+                                android:layout_centerInParent="true" />
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Italian"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/metropolis_semibold"
+                            android:textColor="@color/black"
+                            android:textAlignment="center" />
+
+
+                    </LinearLayout>-->
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="228dp"
+                            android:layout_height="135dp"
+                            android:layout_margin="10dp"
+                            android:elevation="8dp">
+
+                            <ImageView
+                                android:id="@+id/cosmetics"
+                                android:layout_width="228dp"
+                                android:layout_height="135dp"
+                                android:src="@drawable/food_2"
+                                android:layout_centerInParent="true" />
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Burger by Bella"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/metropolis_semibold"
+                            android:textColor="@color/black"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Café     Western Food"
+                            android:textColor="@color/black"
+                            android:textAlignment="center" />
+
+
+                    </LinearLayout>
+                    <!-- <LinearLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:orientation="vertical">
+
+                         <RelativeLayout
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_margin="10dp"
+                             android:elevation="8dp">
+
+                             <ImageView
+                                 android:id="@+id/catalogs"
+                                 android:layout_width="30dp"
+                                 android:layout_height="30dp"
+                                 android:layout_centerInParent="true"/>
+
+
+                         </RelativeLayout>
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:gravity="center_horizontal"
+                             android:text="Catalogs"
+                             android:textColor="@color/black"
+                             android:textAlignment="center" />
+
+
+                     </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:orientation="vertical">
+
+                         <RelativeLayout
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:layout_margin="10dp"
+                             android:elevation="8dp">
+
+                             <ImageView
+                                 android:id="@+id/makeuptuto"
+                                 android:layout_width="30dp"
+                                 android:layout_height="30dp"
+                                 android:layout_centerInParent="true" />
+
+
+                         </RelativeLayout>
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:gravity="center_horizontal"
+                             android:text="Tutorial"
+                             android:textColor="@color/black"
+                             android:textAlignment="center" />
+
+
+                     </LinearLayout>
+ -->
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recent Items"
+                        android:textColor="#4A4B4D"
+                        android:textAllCaps="true"
+                        android:fontFamily="@font/metropolis_semibold"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#FC6011"
+                        android:layout_centerVertical="true"
+                        android:text="View All" />
+
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/mostViewed"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/categories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Categories"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="View All" />
+
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categoriesrecyler"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <!-- <FrameLayout
+      android:id="@+id/frame_fragment_containers"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@id/bottom_navigation">
+     </FrameLayout>-->
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomappbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fabCradleMargin="20dp"
+            android:layout_gravity="bottom">
+
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:animateLayoutChanges="false"
+                android:splitMotionEvents="false"
+                android:fitsSystemWindows="true"
+                app:labelVisibilityMode="labeled"
+                android:layout_gravity="bottom"
+                android:background="@drawable/background_transperent"
+                app:itemIconTint="#ffffff"
+                app:itemTextColor="#ffffff"
+                app:menu="@menu/bottom_nav_menu" />
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_homess"
+            android:tint="@color/white"
+            app:tint="@android:color/white"
+            app:layout_anchor="@id/bottomappbar"
+            android:background="@color/white"
+            android:contentDescription="TODO" />
+
+
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

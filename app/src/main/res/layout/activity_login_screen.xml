@@ -1,0 +1,115 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back1" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/overview_image"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:contentDescription="image"
+            android:scaleType="fitXY"
+            android:src="@drawable/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-123dp" />
+
+        <ImageView
+            android:id="@+id/monkey_img"
+            android:layout_width="281dp"
+            android:layout_height="185dp"
+            android:layout_below="@+id/overview_image"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="61dp"
+            android:layout_marginTop="-109dp"
+            android:layout_marginEnd="61dp"
+            android:baselineAlignBottom="false"
+            android:scaleType="center"
+            android:src="@drawable/monkey" />
+
+        <ImageView
+            android:id="@+id/mealmonkey_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/monkey_img"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="-35dp"
+            android:layout_marginEnd="87dp"
+            android:src="@drawable/moneky_text" />
+
+        <TextView
+            android:id="@+id/food_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food_delivery"
+            android:textColor="#4A4B4D"
+            android:layout_below="@+id/mealmonkey_text"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/discover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/food_delivery"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="52dp"
+            android:text="@string/discover_the_best_foods_from_over_1_000_restaurants_and_fast_delivery_to_your_doorstep"
+            android:textAlignment="center"
+            android:textColor="#7C7D7E" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_button"
+            android:layout_width="307dp"
+            android:layout_height="56dp"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/discover"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="52dp"
+            android:fontFamily="@font/metropolis_semibold"
+            android:layout_marginStart="52dp"
+            android:background="@drawable/ic_rectangle_7"
+            android:textColor="@color/white"
+            android:text="Login"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/create_account"
+            android:layout_width="307dp"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/login_button"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="52dp"
+            android:textAllCaps="false"
+            android:layout_marginStart="52dp"
+            android:fontFamily="@font/metropolis_semibold"
+            android:background="@drawable/ic_create_an_account_button"
+            android:textColor="#FC6011"
+            android:text="Create an Account"/>
+
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
